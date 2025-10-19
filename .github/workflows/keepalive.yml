@@ -1,0 +1,10 @@
+name: Keepalive Workflow
+on:
+  schedule:
+    - cron: "0 0 */50 * *"  # Runs every 50 days
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gautamkrishnar/keepalive-workflow@v2
